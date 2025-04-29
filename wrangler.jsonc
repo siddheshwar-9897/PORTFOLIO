@@ -2,6 +2,6 @@
     "name": "siddheshwarportfilo", // Replace "worker-name" with your desired worker name
     "compatibility_date": "2025-04-29", // Use today's date
     "assets": {
-      "directory": "./dist" // Ensure this points to your build output directory
+      "directory": "./dist/public" // Ensure this points to your build output directory
     }
   }
