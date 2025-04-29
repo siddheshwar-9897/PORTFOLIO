@@ -30,22 +30,22 @@ export const resumeData = {
   },
   skills: {
     languages: [
-      { name: "Python", level: 90 },
-      { name: "Java", level: 75 },
-      { name: "JavaScript", level: 70 },
-      { name: "HTML/CSS", level: 80 }
+      { name: "Python", level: 90, icon: "fab fa-python" },
+      { name: "Java", level: 75, icon: "fab fa-java" },
+      { name: "JavaScript", level: 70, icon: "fab fa-js-square" },
+      { name: "HTML/CSS", level: 80, icon: "fab fa-html5" }
     ],
     frameworks: [
-      { name: "Django", level: 85 },
-      { name: "FastAPI", level: 80 },
-      { name: "Flask", level: 75 },
-      { name: "TensorFlow/scikit-learn", level: 80 }
+      { name: "Django", level: 85, icon: "fab fa-python" },
+      { name: "FastAPI", level: 80, icon: "fas fa-bolt" },
+      { name: "Flask", level: 75, icon: "fas fa-flask" },
+      { name: "TensorFlow/scikit-learn", level: 80, icon: "fas fa-brain" }
     ],
     tools: [
-      { name: "SQL", level: 85 },
-      { name: "Git/GitHub", level: 90 },
-      { name: "REST APIs", level: 85 },
-      { name: "Docker", level: 70 }
+      { name: "SQL", level: 85, icon: "fas fa-database" },
+      { name: "Git/GitHub", level: 90, icon: "fab fa-github" },
+      { name: "REST APIs", level: 85, icon: "fas fa-server" },
+      { name: "Docker", level: 70, icon: "fab fa-docker" }
     ]
   },
   softSkills: [

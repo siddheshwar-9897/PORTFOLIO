@@ -26,7 +26,10 @@ export default function SkillsSection() {
               {skills.languages.map((skill, index) => (
                 <div key={index}>
                   <div className="flex justify-between mb-1">
-                    <span className="font-medium">{skill.name}</span>
+                    <div className="flex items-center">
+                      <i className={`${skill.icon} text-primary mr-2`} style={{ fontSize: '20px' }}></i>
+                      <span className="font-medium">{skill.name}</span>
+                    </div>
                     <span>{skill.level}%</span>
                   </div>
                   <ProgressBar value={skill.level} />
@@ -47,7 +50,10 @@ export default function SkillsSection() {
               {skills.frameworks.map((skill, index) => (
                 <div key={index}>
                   <div className="flex justify-between mb-1">
-                    <span className="font-medium">{skill.name}</span>
+                    <div className="flex items-center">
+                      <i className={`${skill.icon} text-primary mr-2`} style={{ fontSize: '20px' }}></i>
+                      <span className="font-medium">{skill.name}</span>
+                    </div>
                     <span>{skill.level}%</span>
                   </div>
                   <ProgressBar value={skill.level} />
@@ -68,7 +74,10 @@ export default function SkillsSection() {
               {skills.tools.map((skill, index) => (
                 <div key={index}>
                   <div className="flex justify-between mb-1">
-                    <span className="font-medium">{skill.name}</span>
+                    <div className="flex items-center">
+                      <i className={`${skill.icon} text-primary mr-2`} style={{ fontSize: '20px' }}></i>
+                      <span className="font-medium">{skill.name}</span>
+                    </div>
                     <span>{skill.level}%</span>
                   </div>
                   <ProgressBar value={skill.level} />
