@@ -129,13 +129,17 @@ export const resumeData = {
       name: "Salesforce AI Associate",
       icon: "fab fa-salesforce",
       description: "Credential demonstrating proficiency in Salesforce AI fundamentals and applications.",
-      date: "2024"
+      date: "2024",
+      link: "https://drive.google.com/file/d/1BIqKGxLnnKpbxk18eHBxgeeCiyMgTUSt/view?usp=sharing",
+      linkText: "View Certificate"
     },
     {
       name: "Salesforce AI Specialist",
       icon: "fab fa-salesforce",
       description: "Advanced certification for implementing AI solutions within the Salesforce ecosystem.",
-      date: "2024"
+      date: "2024",
+      link: "https://drive.google.com/file/d/1BIqKGxLnnKpbxk18eHBxgeeCiyMgTUSt/view?usp=sharing",
+      linkText: "View Certificate"
     },
     {
       name: "Open Source Contributions",
