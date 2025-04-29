@@ -1,3 +1,4 @@
+
 import { Progress } from "@/components/ui/progress";
 import { resumeData } from "@/data/resume-data";
 import ProgressBar from "@/components/ui/progress-bar";
@@ -26,7 +27,10 @@ export default function SkillsSection() {
               {skills.languages.map((skill, index) => (
                 <div key={index}>
                   <div className="flex justify-between mb-1">
-                    <span className="font-medium">{skill.name}</span>
+                    <span className="font-medium flex items-center">
+                      <i className={`fab fa-${skill.name.toLowerCase()} mr-2 w-5 text-center`} aria-hidden="true"></i>
+                      {skill.name}
+                    </span>
                     <span>{skill.level}%</span>
                   </div>
                   <ProgressBar value={skill.level} />
@@ -47,7 +51,13 @@ export default function SkillsSection() {
               {skills.frameworks.map((skill, index) => (
                 <div key={index}>
                   <div className="flex justify-between mb-1">
-                    <span className="font-medium">{skill.name}</span>
+                    <span className="font-medium flex items-center">
+                      {skill.name.toLowerCase().includes('django') && <i className="fab fa-python mr-2 w-5 text-center" aria-hidden="true"></i>}
+                      {skill.name.toLowerCase().includes('tensorflow') && <i className="fas fa-brain mr-2 w-5 text-center" aria-hidden="true"></i>}
+                      {skill.name.toLowerCase().includes('fastapi') && <i className="fas fa-bolt mr-2 w-5 text-center" aria-hidden="true"></i>}
+                      {skill.name.toLowerCase().includes('flask') && <i className="fas fa-flask mr-2 w-5 text-center" aria-hidden="true"></i>}
+                      {skill.name}
+                    </span>
                     <span>{skill.level}%</span>
                   </div>
                   <ProgressBar value={skill.level} />
@@ -68,7 +78,14 @@ export default function SkillsSection() {
               {skills.tools.map((skill, index) => (
                 <div key={index}>
                   <div className="flex justify-between mb-1">
-                    <span className="font-medium">{skill.name}</span>
+                    <span className="font-medium flex items-center">
+                      {skill.name.toLowerCase() === 'sql' && <i className="fas fa-database mr-2 w-5 text-center" aria-hidden="true"></i>}
+                      {skill.name.toLowerCase().includes('git') && <i className="fab fa-git-alt mr-2 w-5 text-center" aria-hidden="true"></i>}
+                      {skill.name.toLowerCase().includes('github') && <i className="fab fa-github mr-2 w-5 text-center" aria-hidden="true"></i>}
+                      {skill.name.toLowerCase().includes('rest') && <i className="fas fa-cloud mr-2 w-5 text-center" aria-hidden="true"></i>}
+                      {skill.name.toLowerCase().includes('docker') && <i className="fab fa-docker mr-2 w-5 text-center" aria-hidden="true"></i>}
+                      {skill.name}
+                    </span>
                     <span>{skill.level}%</span>
                   </div>
                   <ProgressBar value={skill.level} />
