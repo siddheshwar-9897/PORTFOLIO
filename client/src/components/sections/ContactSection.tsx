@@ -89,17 +89,7 @@ export default function ContactSection() {
                   </div>
                 </div>
                 
-                <div className="flex items-start">
-                  <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4 mt-1">
-                    <i className="fas fa-phone text-primary"></i>
-                  </div>
-                  <div>
-                    <h4 className="font-medium mb-1">Phone</h4>
-                    <a href={`tel:${personalInfo.phone}`} className="hover:text-primary transition-colors">
-                      {personalInfo.phone}
-                    </a>
-                  </div>
-                </div>
+                
                 
                 <div className="flex items-start">
                   <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4 mt-1">

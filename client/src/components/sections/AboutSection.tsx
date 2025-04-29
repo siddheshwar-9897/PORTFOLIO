@@ -50,12 +50,7 @@ export default function AboutSection() {
                     {personalInfo.email}
                   </a>
                 </div>
-                <div className="flex items-center">
-                  <i className="fas fa-phone text-primary w-8"></i>
-                  <a href={`tel:${personalInfo.phone}`} className="hover:text-primary transition-colors">
-                    {personalInfo.phone}
-                  </a>
-                </div>
+                
                 <div className="flex items-center">
                   <i className="fas fa-globe text-primary w-8"></i>
                   <span>{personalInfo.languages}</span>

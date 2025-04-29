@@ -23,7 +23,7 @@ export const resumeData = {
     bio: "I'm a passionate software developer with a strong foundation in AI and data science. My journey began with curiosity about how technology can solve real-world problems, which led me to pursue a career in software development with a focus on AI applications.",
     location: "Pune, Maharashtra, India",
     email: "siddheshwarkadam45@gmail.com",
-    phone: "+91-9322475041",
+    
     languages: "English, Hindi, Marathi",
     linkedin: "https://linkedin.com/in/siddheshwar-kadam",
     github: "https://github.com/siddheshwar-9897"
