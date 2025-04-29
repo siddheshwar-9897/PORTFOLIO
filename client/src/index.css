@@ -7,22 +7,22 @@
 
 :root {
   /* Base colors */
-  --background: 210 17% 98%;
-  --foreground: 210 11% 15%;
+  --background: 0 0% 7%;
+  --foreground: 0 0% 88%;
   
   /* Brand colors */
-  --primary: 211 100% 50%;
-  --primary-foreground: 210 40% 98%;
+  --primary: 207 82% 51%;
+  --primary-foreground: 0 0% 100%;
   
   /* UI colors */
-  --muted: 210 40% 96.1%;
-  --muted-foreground: 215.4 16.3% 46.9%;
-  --popover: 0 0% 100%;
-  --popover-foreground: 222.2 84% 4.9%;
-  --card: 0 0% 100%;
-  --card-foreground: 222.2 84% 4.9%;
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 65%;
+  --popover: 0 0% 7%;
+  --popover-foreground: 0 0% 88%;
+  --card: 0 0% 9%;
+  --card-foreground: 0 0% 88%;
+  --border: 0 0% 20%;
+  --input: 0 0% 20%;
   --secondary: 222.2 47.4% 11.2%;
   --secondary-foreground: 210 40% 98%;
   --accent: 210 40% 96.1%;
@@ -39,6 +39,20 @@
   --chart-4: 39 100% 57%;
   --chart-5: 1 84% 61%;
 }
+
+/* Hover effects */
+a, button {
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: hsl(207 82% 68%);
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
 
 .dark {
   --background: 222.2 84% 4.9%;
