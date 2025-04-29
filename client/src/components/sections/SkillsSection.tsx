@@ -2,9 +2,30 @@ import { Progress } from "@/components/ui/progress";
 import { resumeData } from "@/data/resume-data";
 import ProgressBar from "@/components/ui/progress-bar";
 
+const skillIconMap = {
+  "JavaScript": "fab fa-js-square",
+  "TypeScript": "fab fa-typescript",
+  "React": "fab fa-react",
+  "Node.js": "fab fa-node-js",
+  "Python": "fab fa-python",
+  "Java": "fab fa-java",
+  "SQL": "fas fa-database",
+  "MongoDB": "fas fa-database",
+  "PostgreSQL": "fas fa-database",
+  "Git": "fab fa-github",
+  "Docker": "fab fa-docker",
+  "AWS": "fab fa-aws",
+  "Azure": "fab fa-microsoft",
+  // Add more mappings as needed
+};
+
+function getSkillIcon(skillName) {
+  return skillIconMap[skillName] || "fas fa-question"; // Default icon if not found
+}
+
 export default function SkillsSection() {
   const { skills, softSkills } = resumeData;
-  
+
   return (
     <section id="skills" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
@@ -12,7 +33,7 @@ export default function SkillsSection() {
           <h2 className="section-heading">Skills & Interests</h2>
           <div className="section-heading-bar"></div>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Programming Languages */}
           <div className="bg-white p-6 rounded-lg shadow-md transition-transform hover:transform hover:scale-105 duration-300">
@@ -26,7 +47,10 @@ export default function SkillsSection() {
               {skills.languages.map((skill, index) => (
                 <div key={index}>
                   <div className="flex justify-between mb-1">
-                    <span className="font-medium">{skill.name}</span>
+                    <span className="font-medium flex items-center">
+                      <i className={`mr-2 ${getSkillIcon(skill.name)}`}></i>
+                      {skill.name}
+                    </span>
                     <span>{skill.level}%</span>
                   </div>
                   <ProgressBar value={skill.level} />
@@ -34,7 +58,7 @@ export default function SkillsSection() {
               ))}
             </div>
           </div>
-          
+
           {/* Frameworks & Libraries */}
           <div className="bg-white p-6 rounded-lg shadow-md transition-transform hover:transform hover:scale-105 duration-300">
             <div className="flex items-center mb-4">
@@ -47,7 +71,10 @@ export default function SkillsSection() {
               {skills.frameworks.map((skill, index) => (
                 <div key={index}>
                   <div className="flex justify-between mb-1">
-                    <span className="font-medium">{skill.name}</span>
+                    <span className="font-medium flex items-center">
+                      <i className={`mr-2 ${getSkillIcon(skill.name)}`}></i>
+                      {skill.name}
+                    </span>
                     <span>{skill.level}%</span>
                   </div>
                   <ProgressBar value={skill.level} />
@@ -55,7 +82,7 @@ export default function SkillsSection() {
               ))}
             </div>
           </div>
-          
+
           {/* Databases & Tools */}
           <div className="bg-white p-6 rounded-lg shadow-md transition-transform hover:transform hover:scale-105 duration-300">
             <div className="flex items-center mb-4">
@@ -68,7 +95,10 @@ export default function SkillsSection() {
               {skills.tools.map((skill, index) => (
                 <div key={index}>
                   <div className="flex justify-between mb-1">
-                    <span className="font-medium">{skill.name}</span>
+                    <span className="font-medium flex items-center">
+                      <i className={`mr-2 ${getSkillIcon(skill.name)}`}></i>
+                      {skill.name}
+                    </span>
                     <span>{skill.level}%</span>
                   </div>
                   <ProgressBar value={skill.level} />
@@ -76,7 +106,7 @@ export default function SkillsSection() {
               ))}
             </div>
           </div>
-          
+
           {/* Soft Skills */}
           <div className="bg-white p-6 rounded-lg shadow-md md:col-span-3 lg:col-span-3 mt-8">
             <div className="flex items-center mb-4">
@@ -85,7 +115,7 @@ export default function SkillsSection() {
               </div>
               <h3 className="text-xl font-bold">Soft Skills</h3>
             </div>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {softSkills.map((skill, index) => (
                 <div key={index} className="flex items-center p-3 bg-blue-50 rounded-md">
